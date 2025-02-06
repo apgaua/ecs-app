@@ -7,5 +7,5 @@ data "aws_ssm_parameter" "listener" {
 }
 
 data "aws_ssm_parameter" "privatesubnets" {
-  name = var.ssm_private_subnets
+  name = var.ssm_private_subnets[count.index]
 }
