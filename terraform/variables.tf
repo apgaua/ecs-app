@@ -7,5 +7,5 @@ variable "service_memory" {}
 variable "ssm_vpc_id" {}
 variable "ssm_listener" {}
 variable "ssm_private_subnets" {
-    type = list(string)
+  type = list(string)
 }
